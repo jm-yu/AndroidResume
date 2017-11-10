@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.jmyu.androidresume.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Jimmy"
+                    android:textSize="@dimen/caption_text_size" />
+
+                <ImageButton
+                    android:id="@+id/edit_basic_info"
+                    android:layout_width="@dimen/icon_button_size"
+                    android:layout_height="@dimen/icon_button_size"
+                    android:background="?attr/selectableItemBackground"
+                    android:contentDescription="@string/edit_basic_info"
+                    android:src="@drawable/ic_create_black_24dp"
+                    />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/caption_text_size"
+                android:text="jmyu1994@ufl.edu"/>
+
+        </LinearLayout>
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_create_black_24dp"
+            />
+
+
+    </LinearLayout>
+
+
+
+    <!--
+        TODO 4: Add ImageView
+        Add ImageView with id "user_picture" here.
+        Set its image (using android:src attribute) to any picture you want.
+        What should its width and height be?
+
+        Whatever picture you want to use, you will need to import first.
+        Check out the slides for how to import custom pictures.
+    -->
+
+    <!--
+        TODO 5: Organize 4 views using LinearLayout
+        Organize the 4 views (name, edit_basic_info, email, user_picture) using 3 nested LinearLayout.
+        [1] put name and edit_basic_info into a LinearLayout with orientation "horizontal".
+        [2] put LinearLayout in [1] and email into a LinearLayout with orientation "vertical".
+        [3] put LinearLayout in [2] and user_picture into a LinearLayout with orientation "horizontal".
+
+        How to position user_picture to the right most? Check out "layout_weight" in the slides!
+    -->
+
+    <!--
+        TODO 6: UI polish!
+        Does the UI look weird after you have finished the 5 todos?
+        Maybe add some padding (16dp recommended) to the root LinearLayout :)
+
+        Best practice:
+        It's best to put the padding value (or any other size constant, like the size of user_picture)
+        into res/values/dimens.xml. Check out 2_main_ui branch to see how to do that.
+
+        If your res/values folder doesn't contain dimens.xml, you can simply create one by right
+        click on res folder -> New -> Android resource file -> File name: dimens -> OK
+    -->
+    >
+
+
+
+</android.support.constraint.ConstraintLayout>
